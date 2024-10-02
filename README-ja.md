@@ -1,3 +1,7 @@
+[日本語版 README はこちら](https://github.com/hitto-hub/scan_and_ssh/blob/main/README-ja.md)
+
+[English README is here](https://github.com/hitto-hub/scan_and_ssh/blob/main/README.md)
+
 # scan_and_ssh
 
 ただのSSH。それ以外は何もありません。
