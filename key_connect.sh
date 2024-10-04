@@ -45,6 +45,7 @@ PORTS=${PORTS:-$DEFAULT_PORTS}
 # スキャンして、指定ポートが開いているホストをリストアップ
 echo "Scanning IP range $IP_RANGE for open ports $PORTS..."
 open_hosts=$(nmap -p $PORTS --open $IP_RANGE -oG - | grep "/open" | awk '{print $2}')
+# open_hosts=$(nmap -p $PORTS --open $IP_RANGE -oG - | grep "Up" | awk '{print $2}')
 
 # ポートが開いているホストがない場合、エラーメッセージを表示して終了
 if [ -z "$open_hosts" ]; then
